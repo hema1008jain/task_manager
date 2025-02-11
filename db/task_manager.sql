@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 11, 2025 at 11:40 PM
+-- Generation Time: Feb 12, 2025 at 01:56 AM
 -- Server version: 8.0.35-0ubuntu0.23.04.1
 -- PHP Version: 7.4.33
 
@@ -65,7 +65,8 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `user_id`, `start_time`, `stop_time`, `notes`, `description`, `created_at`, `status`, `updated_at`) VALUES
-(2, 6, '2025-02-11 04:02:00', '2025-02-13 03:59:00', 'task 4564546545646', '   task 1     task 1     task 1     556544444444444444444444444444', '2025-02-10 19:30:07', 0, '2025-02-11 16:59:30');
+(12, 6, '2025-02-19 01:30:00', '2025-02-21 01:33:00', 'sasa', 'sa', '2025-02-11 20:00:50', 1, '2025-02-11 20:02:39'),
+(13, 6, '2025-02-15 01:32:00', '2025-02-23 01:32:00', 'sdsdsd', 'sdsd', '2025-02-11 20:03:03', 1, '2025-02-11 20:06:15');
 
 -- --------------------------------------------------------
 
@@ -92,8 +93,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `phone`, `password`, `role_id`, `last_login`, `last_password_change`, `created_at`, `updated_at`) VALUES
-(1, 'hema', 'jain', 'admin@yopmail.com', '8295341008', '$2y$10$a4I3IOe83o0mcTEL453EkO0B3l8XWvoEJhX66rk3XTSY.HSqp6Wte', 1, '2025-02-11 18:02:31', '2025-02-11 18:02:45', '2025-02-11 09:13:34', '2025-02-11 09:13:34'),
-(6, 'abhishek', 'jain', 'user@yopmail.com', '8596856968', '$2y$10$qHKNHcR75iQi9GWg.PcGL.PUK5WIeOYMNYsEHZtfVCkrhKFRVLM8O', 2, '2025-02-11 18:01:10', '2025-02-11 18:00:40', '2025-02-11 09:13:34', '2025-02-11 09:13:34');
+(1, 'admin', 'kk', 'admin@yopmail.com', '0123456789', '$2y$10$a4I3IOe83o0mcTEL453EkO0B3l8XWvoEJhX66rk3XTSY.HSqp6Wte', 1, '2025-02-11 20:07:06', '2025-02-11 18:02:45', '2025-02-11 09:13:34', '2025-02-11 09:13:34'),
+(6, 'user', 'kk', 'user@yopmail.com', '1222456789', '$2y$10$ZNDEEkGKeYtLkp6yTjM3euFgtYeOy9hjy1pkAe4xk4d0p0cXoICFC', 2, '2025-02-11 20:06:49', '2025-02-11 19:46:59', '2025-02-11 09:13:34', '2025-02-11 09:13:34');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +136,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     header('Content-Type: text/csv; charset=utf-8');
-    header('Content-Disposition: attachment; filename=user_report.csv');
+    header('Content-Disposition: attachment; filename=user_report_'.time().'.csv');
 
     $output = fopen('php://output', 'w');
 
